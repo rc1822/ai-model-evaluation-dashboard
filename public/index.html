@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI Model Evaluation Dashboard for benchmarking multiple-choice accuracy and latency." />
+  <title>AI Model Evaluation Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">LLM BENCHMARKING PROJECT</p>
+        <h1>AI Model Evaluation Dashboard</h1>
+        <p class="subhead">Benchmark model accuracy and response latency across curated IT datasets. Run the built-in simulator instantly or connect a real OpenAI model with an environment variable.</p>
+      </div>
+      <div class="status-pill" id="apiStatus">Checking API…</div>
+    </header>
+
+    <section class="panel control-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NEW RUN</p>
+          <h2>Evaluation configuration</h2>
+        </div>
+        <button class="ghost danger" id="clearRuns" type="button">Clear history</button>
+      </div>
+
+      <div class="controls-grid">
+        <label>
+          <span>Provider</span>
+          <select id="provider">
+            <option value="demo">Demo simulator (no API key)</option>
+            <option value="openai">OpenAI</option>
+          </select>
+        </label>
+        <label>
+          <span>Questions per dataset</span>
+          <input id="limit" type="number" min="1" max="10" value="10" />
+        </label>
+      </div>
+
+      <div class="datasets" id="datasets"></div>
+      <div class="actions">
+        <button class="primary" id="startRun" type="button">Start benchmark</button>
+        <p id="runMessage" class="muted"></p>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Current run metrics">
+      <article class="metric"><span>Accuracy</span><strong id="accuracy">—</strong><small>correct answers</small></article>
+      <article class="metric"><span>Average latency</span><strong id="latency">—</strong><small>milliseconds</small></article>
+      <article class="metric"><span>Progress</span><strong id="progress">—</strong><small>questions evaluated</small></article>
+      <article class="metric"><span>Provider</span><strong class="provider-value" id="currentProvider">—</strong><small>evaluation engine</small></article>
+    </section>
+
+    <section class="two-column">
+      <article class="panel">
+        <div class="section-heading"><div><p class="eyebrow">BREAKDOWN</p><h2>Dataset performance</h2></div></div>
+        <div id="datasetStats" class="bar-list empty-state">Run a benchmark to populate results.</div>
+      </article>
+      <article class="panel">
+        <div class="section-heading"><div><p class="eyebrow">ACTIVITY</p><h2>Recent runs</h2></div></div>
+        <div id="history" class="history empty-state">No evaluation history yet.</div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">DETAILS</p><h2>Question results</h2></div>
+        <span class="muted" id="resultCount"></span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Dataset</th><th>Question</th><th>Expected</th><th>Model</th><th>Latency</th><th>Result</th></tr></thead>
+          <tbody id="resultsBody"><tr><td colspan="6" class="empty-cell">No results yet.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <span>Built with Node.js, SQLite, Server-Sent Events, and a pluggable model provider.</span>
+      <span>Portfolio project</span>
+    </footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

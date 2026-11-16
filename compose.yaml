@@ -1,0 +1,13 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - evaluation-data:/app/data/runtime
+
+volumes:
+  evaluation-data:

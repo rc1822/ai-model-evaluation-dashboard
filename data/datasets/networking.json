@@ -1,0 +1,17 @@
+{
+  "id": "networking",
+  "name": "Networking",
+  "description": "TCP/IP, addressing, DNS, routing, and common network services.",
+  "questions": [
+    {"id":"net-01","question":"Which protocol translates host names such as example.com into IP addresses?","options":{"A":"DNS","B":"DHCP","C":"SSH","D":"SMTP"},"correct":"A"},
+    {"id":"net-02","question":"Which transport protocol provides reliable ordered delivery?","options":{"A":"UDP","B":"ARP","C":"TCP","D":"ICMP"},"correct":"C"},
+    {"id":"net-03","question":"What is the default port for HTTPS?","options":{"A":"22","B":"53","C":"80","D":"443"},"correct":"D"},
+    {"id":"net-04","question":"Which device normally forwards packets between different IP networks?","options":{"A":"Router","B":"Keyboard","C":"Layer 1 repeater only","D":"Printer"},"correct":"A"},
+    {"id":"net-05","question":"What service commonly assigns IP configuration to clients automatically?","options":{"A":"DNS","B":"DHCP","C":"NTP","D":"FTP"},"correct":"B"},
+    {"id":"net-06","question":"Which IPv4 address is part of a private address range?","options":{"A":"8.8.8.8","B":"172.16.10.5","C":"1.1.1.1","D":"198.51.100.7"},"correct":"B"},
+    {"id":"net-07","question":"What does a subnet mask determine?","options":{"A":"The encrypted portion of a packet","B":"The network and host portions of an IP address","C":"The DNS server vendor","D":"The cable category"},"correct":"B"},
+    {"id":"net-08","question":"Which command is commonly used to test basic IP reachability to another host?","options":{"A":"ping","B":"mkdir","C":"grep","D":"chmod"},"correct":"A"},
+    {"id":"net-09","question":"Which protocol is used by ping to carry echo request and reply messages?","options":{"A":"SMTP","B":"ICMP","C":"HTTP","D":"SNMP"},"correct":"B"},
+    {"id":"net-10","question":"NAT on a home router commonly allows what?","options":{"A":"Multiple private hosts to share a public IPv4 address","B":"Passwords to be hashed","C":"Files to be compressed","D":"CPU cores to share memory"},"correct":"A"}
+  ]
+}

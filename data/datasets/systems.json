@@ -1,0 +1,17 @@
+{
+  "id": "systems",
+  "name": "Systems & Cloud",
+  "description": "Operating systems, virtualization, cloud concepts, storage, and reliability.",
+  "questions": [
+    {"id":"sys-01","question":"What does virtualization allow a hypervisor to do?","options":{"A":"Run multiple virtual machines on one physical host","B":"Convert DNS names into passwords","C":"Replace all backups","D":"Eliminate operating systems"},"correct":"A"},
+    {"id":"sys-02","question":"Which cloud service model typically gives customers virtual machines while the provider manages physical hardware?","options":{"A":"IaaS","B":"SaaS only","C":"DNSSEC","D":"SMTP"},"correct":"A"},
+    {"id":"sys-03","question":"What is the main purpose of a load balancer?","options":{"A":"Distribute requests across multiple service instances","B":"Encrypt a hard drive","C":"Compile source code","D":"Assign local user passwords"},"correct":"A"},
+    {"id":"sys-04","question":"Which storage configuration mirrors data across two drives for redundancy?","options":{"A":"RAID 0","B":"RAID 1","C":"Swap space","D":"L1 cache"},"correct":"B"},
+    {"id":"sys-05","question":"A process is best described as what?","options":{"A":"A running instance of a program","B":"A permanent IP address","C":"A database table","D":"A DNS record"},"correct":"A"},
+    {"id":"sys-06","question":"What is horizontal scaling?","options":{"A":"Adding more service instances or machines","B":"Increasing one machine's CPU only","C":"Deleting backups","D":"Changing file permissions"},"correct":"A"},
+    {"id":"sys-07","question":"Why are health checks used in highly available services?","options":{"A":"To determine whether instances can receive traffic","B":"To encrypt source code","C":"To format user passwords","D":"To assign MAC addresses"},"correct":"A"},
+    {"id":"sys-08","question":"What is a key benefit of infrastructure automation?","options":{"A":"Repeatable and consistent environment provisioning","B":"Guaranteed zero security incidents","C":"No need for monitoring","D":"No need for documentation"},"correct":"A"},
+    {"id":"sys-09","question":"Which metric most directly measures how long a request takes to complete?","options":{"A":"Latency","B":"Capacity","C":"Durability","D":"Entropy"},"correct":"A"},
+    {"id":"sys-10","question":"What is the purpose of a backup?","options":{"A":"Provide a recoverable copy of data","B":"Replace access control","C":"Route internet traffic","D":"Resolve host names"},"correct":"A"}
+  ]
+}

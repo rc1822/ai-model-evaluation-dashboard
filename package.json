@@ -1,0 +1,26 @@
+{
+  "name": "ai-model-evaluation-dashboard",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Portfolio-ready dashboard for benchmarking AI model accuracy and latency across multiple-choice datasets.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "evaluation",
+    "benchmarking",
+    "sqlite",
+    "sse",
+    "nodejs"
+  ],
+  "license": "MIT"
+}

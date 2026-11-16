@@ -1,0 +1,17 @@
+{
+  "id": "computer-security",
+  "name": "Computer Security",
+  "description": "Foundational security controls, risk, authentication, and incident response.",
+  "questions": [
+    {"id":"sec-01","question":"Which property of the CIA triad is primarily protected by encryption of stored data?","options":{"A":"Availability","B":"Confidentiality","C":"Non-repudiation","D":"Redundancy"},"correct":"B"},
+    {"id":"sec-02","question":"What principle gives users only the permissions needed to perform their job?","options":{"A":"Least privilege","B":"Defense in depth","C":"Separation of duties","D":"Job rotation"},"correct":"A"},
+    {"id":"sec-03","question":"A phishing email is best classified as which type of threat technique?","options":{"A":"Physical tampering","B":"Social engineering","C":"Load balancing","D":"Data normalization"},"correct":"B"},
+    {"id":"sec-04","question":"Which control most directly reduces the impact of a stolen password?","options":{"A":"RAID","B":"MFA","C":"DHCP","D":"NAT"},"correct":"B"},
+    {"id":"sec-05","question":"What does an RPO describe in disaster recovery planning?","options":{"A":"Maximum acceptable data loss measured in time","B":"Maximum recovery team size","C":"Required processor utilization","D":"Time between software releases"},"correct":"A"},
+    {"id":"sec-06","question":"Which is an example of a preventive security control?","options":{"A":"Reviewing logs after an incident","B":"Blocking unauthorized traffic with a firewall","C":"Restoring data from backup","D":"Writing a post-incident report"},"correct":"B"},
+    {"id":"sec-07","question":"Hashing passwords is primarily intended to do what?","options":{"A":"Make passwords reversible by administrators","B":"Protect stored password verifiers","C":"Increase network bandwidth","D":"Replace authorization checks"},"correct":"B"},
+    {"id":"sec-08","question":"Which security concept uses multiple independent controls so one failure does not expose the system?","options":{"A":"Defense in depth","B":"Single sign-on","C":"Obfuscation","D":"Caching"},"correct":"A"},
+    {"id":"sec-09","question":"An unpatched web server with a known exploitable flaw is best described as what?","options":{"A":"Asset","B":"Vulnerability","C":"Risk appetite","D":"Recovery point"},"correct":"B"},
+    {"id":"sec-10","question":"What is the first priority when actively containing a confirmed security incident?","options":{"A":"Preserve business cards","B":"Limit further damage and spread","C":"Delete all logs","D":"Publish a press release"},"correct":"B"}
+  ]
+}
